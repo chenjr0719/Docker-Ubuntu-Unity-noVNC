@@ -10,19 +10,19 @@ This **Image/Dockerfile** aims to create a container for **Ubuntu 16.04** with *
 You can build this **Dockerfile** yourself:
 
 ```
-sudo docker build -t "chenjr0719/ubuntu-Unity-novnc" .
+sudo docker build -t "chenjr0719/ubuntu-unity-novnc" .
 ```
 
 Or, just pull my **image**:
 
 ```
-sudo docker pull chenjr0719/ubuntu-Unity-novnc
+sudo docker pull chenjr0719/ubuntu-unity-novnc
 ```
 
 The default usage of this image is:
 
 ```
-sudo docker run -itd -p 80:6080 chenjr0719/ubuntu-Unity-novnc
+sudo docker run -itd -p 80:6080 chenjr0719/ubuntu-unity-novnc
 ```
 
 Wait for a few second, you can access http://localhost/vnc.html and see this screen:
@@ -49,7 +49,7 @@ This image contains 3 input argument:
 
    You can set your own user password as you like:
    ```
-   sudo docker run -itd -p 80:6080 -e PASSWORD=$YOUR_PASSWORD chenjr0719/ubuntu-Unity-novnc
+   sudo docker run -itd -p 80:6080 -e PASSWORD=$YOUR_PASSWORD chenjr0719/ubuntu-unity-novnc
    ```
    Now, you can user your own password to log in.
 
@@ -57,7 +57,7 @@ This image contains 3 input argument:
 
    In default, the user **ubuntu** will not be the sudoer, but if you need, you can use this command:
    ```
-   sudo docker run -itd -p 80:6080 -e SUDO=yes chenjr0719/ubuntu-Unity-novnc
+   sudo docker run -itd -p 80:6080 -e SUDO=yes chenjr0719/ubuntu-unity-novnc
    ```
 
    This command will grant the **sudo** to user **ubuntu**.
@@ -75,7 +75,7 @@ This image contains 3 input argument:
    To enable Ngrok, use following command:
 
    ```
-   sudo docker run -itd -p 80:6080 -e NGROK=yes chenjr0719/ubuntu-Unity-novnc
+   sudo docker run -itd -p 80:6080 -e NGROK=yes chenjr0719/ubuntu-unity-novnc
    ```
 
    And find the link address:
