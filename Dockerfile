@@ -16,6 +16,7 @@ RUN apt-get update \
         gnome-panel \
         metacity \
         nautilus \
+        gedit \
         xterm \
         sudo
 
