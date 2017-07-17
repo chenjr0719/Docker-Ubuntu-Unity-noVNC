@@ -33,9 +33,8 @@ RUN apt-get install -y \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/*
 
-# Install TigerVNC
-COPY tigervncserver_1.6.80-4_amd64.deb $HOME
-RUN dpkg -i $HOME/tigervncserver_1.6.80-4_amd64.deb
+# Copy tigerVNC binaries
+ADD tigervnc-1.8.0.x86_64 /
 
 # Clone noVNC.
 RUN git clone https://github.com/novnc/noVNC.git $HOME/noVNC
