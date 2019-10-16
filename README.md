@@ -27,7 +27,7 @@ sudo docker run -itd -p 80:6080 chenjr0719/ubuntu-unity-novnc
 
 Wait for a few second, you can access http://localhost/vnc.html and see this screen:
 
-![alt text](https://github.com/chenjr0719/Docker-Ubuntu-Unity-noVNC/raw/master/noVNC.png "vnc.html")
+![noVNC](noVNC.png "vnc.html")
 
 
 ### Password
@@ -42,7 +42,7 @@ And you can use this password to log in into this container.
 
 After log in, you can see this screen:
 
-![alt text](https://github.com/chenjr0719/Docker-Ubuntu-Unity-noVNC/raw/master/desktop.png "Unity desktop")
+![Unity desktop](desktop.png "Unity desktop")
 
 
 ## Arguments
@@ -74,7 +74,7 @@ This image contains 3 input argument:
    See "man sudo_root" for details.
    ```
 
-   ![alt text](https://github.com/chenjr0719/Docker-Ubuntu-Unity-noVNC/raw/master/sudo.png "sudo")
+   ![sudo](sudo.png "sudo")
 
    **Caution!!** allow your user as sudoer may cause security issues, use it carefully.
 
@@ -98,7 +98,7 @@ This image contains 3 input argument:
 
    **NGROK=YES**, **NGROK=Yes**, **NGROK=Y**, **NGROK=y** are also supported.
 
-    **Caution!!** this may also cause security issues, use it carefully.
+    **Caution!!** this will leave the container open and may cause security issues, use it carefully.
 
 
 ## Screen size
@@ -115,6 +115,8 @@ sudo docker restart $CONTAINER_ID
 
 ## Issues
 
-Can't work properly with gnome-terminal, use XTerm to place it.
+Can't work properly with gnome-terminal, use XTerm in place of it.
 
 Some components of Unity may not work properly with vncserver.
+
+This is not a full virtual machine of ubuntu, hence please keep in mind that not everything will work inside of it.
