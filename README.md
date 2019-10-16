@@ -25,7 +25,7 @@ The default usage of this image is:
 sudo docker run -itd -p 80:6080 chenjr0719/ubuntu-unity-novnc
 ```
 
-Wait for a few second, you can access http://localhost/vnc.html and see this screen:
+Wait for a few seconds, then you can access http://localhost/ and see this screen:
 
 ![noVNC](noVNC.png "vnc.html")
 

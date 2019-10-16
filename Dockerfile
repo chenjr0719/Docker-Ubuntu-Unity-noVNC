@@ -40,6 +40,7 @@ RUN cp -R $HOME/tigervnc/tigervnc-1.9.0.x86_64/* / && rm -rf $HOME/tigervnc/
 
 # Clone noVNC.
 RUN git clone https://github.com/novnc/noVNC.git $HOME/noVNC
+RUN cp $HOME/noVNC/vnc.html $HOME/noVNC/index.html
 
 # Clone websockify for noVNC
 Run git clone https://github.com/kanaka/websockify $HOME/noVNC/utils/websockify
